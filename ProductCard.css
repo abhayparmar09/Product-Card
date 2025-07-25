@@ -1,0 +1,117 @@
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-color: #f5f5f7;
+  min-height: 100vh;
+}
+
+/* ---- Main Card ---- */
+.card {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 340px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* ---- Image Section ---- */
+.image-box {
+  background: #e6e6f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 220px;
+  overflow: hidden;
+}
+
+.image-box img {
+  height: 100%;
+  object-fit: contain;
+  transform: rotate(-15deg);
+  transition: transform 0.3s ease;
+}
+
+.image-box img:hover {
+  transform: rotate(-10deg) scale(1.05);
+}
+
+/* ---- Content ---- */
+.card-content {
+  padding: 20px;
+}
+
+.card-content h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* ---- Variants (like Size, Color) ---- */
+.variant-labels {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.variant {
+  background-color: #e0e0e0;
+  padding: 4px 10px;
+  font-size: 0.75rem;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+/* ---- Description ---- */
+.description {
+  font-size: 0.87rem;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+/* ---- Footer: Price + Button ---- */
+.card-footer {
+  border-top: 1px solid #eee;
+  padding: 16px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price small {
+  font-size: 0.7rem;
+  color: #777;
+  display: block;
+}
+
+.price strong {
+  font-size: 1.3rem;
+  color: #000;
+}
+
+/* ---- Button ---- */
+.btn {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #6a1b9a;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #4a148c;
+}
+
+.btn.out {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
